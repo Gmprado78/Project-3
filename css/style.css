@@ -47,12 +47,13 @@ display: inline-block;
   color: black;
   display: block;
   border: 6px solid;
+  border-color: Lightcyan;
   text-decoration: none;
   float: left;
 }
 
 #main-navbar ul li a:hover {
-  background-color: LightSlateGrey;
+  background-color: Lightblue
 }
 /* End navbar stuff*/
 body {
