@@ -55,7 +55,6 @@ display: inline-block;
   background-color: LightSlateGrey;
 }
 /* End navbar stuff*/
-
 body {
   background-color: SteelBlue;
   background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%);
@@ -115,7 +114,6 @@ iframe{
 #header container{
   position: relative;
 }
-
 /* fixed*/
 #wrapper {
   width: 1890px;
@@ -156,4 +154,22 @@ background-color: #00b5d6;
 #footer2 {
   clear:left;
   background-color: #00b5d6;
+}
+/*Map CSS starts here*/
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#map {
+  height: 100%;
+}
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
