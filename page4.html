@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Map</title>
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&family=Maiden+Orange&family=Tilt+Neon&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="./style.css" />
-	 <script type="module" src="./index.js"></script>
-  </head>
-  
-  <body>
-    <header>
+<head>
+  <title>Google maps</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&family=Maiden+Orange&family=Tilt+Neon&display=swap" rel="stylesheet">
+  <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap" async defer></script>  
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&libraries=visualization&callback=initMap"></script>
+</head>
+<body>
+  <header>
       <nav id="main-navbar">
         <div id="navbar-container">
           <ul>
             <li><a href="index.html"><strong>Resume</strong></a></li>
             <li><a href="page2.html"><strong>The Legend of Zelda</strong></a></li>
             <li><a href="page3.html"><strong>Pokémon</strong></a></li>
-			<li><a href="page4.html"><strong>Maps</strong></a></li>
+	        <li><a href="page4.html"><strong>Google Maps</strong></a></li>
           </ul>
         </div>
-      </nav>
-    </header>
+	  </nav>
+  </header>
+    <div id="wrapper2">
+  <div id="canvas"><div id="map">
+</div></div>
+<p>America Map</p>
+    </div>
+	
+<section>
+  <h1> This map will list the states I have visited in  the United States</h1>
+</section>
 
+<<<<<<< HEAD
 <div id="map">
 
 </div>
@@ -45,5 +54,11 @@
     <!-- prettier-ignore -->
     <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
         ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
+		
+		
   </body>
 </html>
+=======
+</body>
+</html>
+>>>>>>> a01ab216277d50e1829d88eeee484d01aa1a6f5e
