@@ -5,6 +5,8 @@ function init() {
 
 google.maps.event.addDomListener(window, 'load', init);
 
+const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let labelIndex = 0;
 
 function initMap() {
   const myLatLng = { lat: 41.76999521182157, lng: -87.70415171237143};
@@ -32,5 +34,16 @@ async function initMap() {
     zoom: 15,
   });
 }
-
+ google.maps.event.addListener(map, "click", (event) => {
+    addMarker(event.latLng, map);
+  });
+  
+function addMarker(location, map) {
+	new google.maps.Marker({
+    position: location,
+    label: labels[labelIndex++ % labels.length],
+    map: map,
+  });
+}
 initMap();
+
