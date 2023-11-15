@@ -12,7 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&family=Maiden+Orange&family=Tilt+Neon&display=swap" rel="stylesheet">
  <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap" 
    async defer></script>  
-
+   <script defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&libraries=visualization&callback=initMap"></script>
+<script a sync type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
   <header>
@@ -25,24 +28,23 @@
 	        <li><a href="page4.html"><strong>Google Maps</strong></a></li>
           </ul>
         </div>
-		<div id="map"></div>
+		</header>
 		<script>
 		var map;
 		function initmap() {
 		  map = new google.maps.Map(document.getElementById('map'), {
-		    center: {lat: -34.397, lng: 150.644},
+		    center: {lat: 41.76999521182157, lng: },-87.70415171237143
 			zoom: 8
 		  });
 		 }
+		 
 	  </script>
-	  
+	  <div id="wrapper2">
+  <div id="canvas"><div id="map">
+</div></div>
 
-
-	  
       </nav>
-    </header>
-  <div id="wrapper2">
-  <div id="canvas"></div>
+    
 </div>
 
 </body>
