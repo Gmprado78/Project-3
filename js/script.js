@@ -22,7 +22,6 @@ function initMap() {
 
 window.initMap = initMap;
 
-<<<<<<< HEAD
 let map;
 
 async function initMap() {
@@ -35,49 +34,3 @@ async function initMap() {
 }
 
 initMap();
-
-<<<<<<< HEAD
-var map;
-function initmap() {
-  map = new google.maps.Map(document.getElementByID('map'), {
-	  center: {lat: -34.397, lng: 150.644},
-	  zoom 8
-  });
-}
-
-=======
->>>>>>> a01ab216277d50e1829d88eeee484d01aa1a6f5e
-let map;
-
-async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
-
-  map = new Map(document.getElementById("map"), {
-    center: { lat:  41.76999521182157, lng:-87.70415171237143},
-    zoom: 15,
-  });
-}
-
-initMap();
-
-<<<<<<< HEAD
-let map;
-
-async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
-
-  map = new Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-  });
-}
-
-initMap();
-=======
-
-
->>>>>>> a01ab216277d50e1829d88eeee484d01aa1a6f5e
-=======
-
-
->>>>>>> a01ab216277d50e1829d88eeee484d01aa1a6f5e
