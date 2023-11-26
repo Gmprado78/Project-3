@@ -13,7 +13,6 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
     center: myLatLng,
-	let park =  {lat:41.76999521182157 , lng:-87.70415171237143 }
   });
 
   new google.maps.Marker({
@@ -35,16 +34,6 @@ async function initMap() {
     zoom: 15,
   });
 }
- google.maps.event.addListener(map, "click", (event) => {
-    addMarker(event.latLng, map);
-  });
-  
-function addMarker(location, map) {
-	new google.maps.Marker({
-    position: location,
-    label: labels[labelIndex++ % labels.length],
-    map: map,
-  });
-}
+
 initMap();
 
