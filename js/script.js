@@ -13,6 +13,7 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
     center: myLatLng,
+	let park =  {lat:41.76999521182157 , lng:-87.70415171237143 }
   });
 
   new google.maps.Marker({
