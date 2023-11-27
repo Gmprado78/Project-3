@@ -9,7 +9,7 @@ function initMap() {
 	zoom:10,
   });
 
- var marker = new google.maps.Marker({
+ const marker = new google.maps.Marker({
     position: myLatLng,
     map,
     title: "Marquette Park",
@@ -19,7 +19,7 @@ function initMap() {
 	},
 	animation: google.maps.Animation.DROP
  });
-   var museum = new google.maps.Marker({
+   museum= new google.maps.Marker({
     position: { lat: 41.790780214781634, lng: -87.58321264239794 },
     map,
     title: "The Museum of Science and Industry",
@@ -28,12 +28,20 @@ function initMap() {
 	scaledSize: new google.maps.Size(86,80),
 	},
 	animation: google.maps.Animation.DROP
+	
   });
   
   const infowindow = new google.maps.InfoWindow({
-    content: contentString,
-    ariaLabel: "Uluru",
+    content: "The Museum of Science and Industry",
+   
   });
+  
+   marker.addListener("click", () => {
+    infowindow.open(map,marker);
+	  });
+	  
+	  
+
 }
 
 let map;
