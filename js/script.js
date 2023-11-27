@@ -30,7 +30,10 @@ function initMap() {
 	animation: google.maps.Animation.DROP
   });
   
-  
+  const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    ariaLabel: "Uluru",
+  });
 }
 
 let map;
