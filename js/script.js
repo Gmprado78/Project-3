@@ -1,23 +1,30 @@
 function init() {
 	alert('it works');
-	
 }
-
-google.maps.event.addDomListener(window, 'load', init);
-
-const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let labelIndex = 0;
 
 function initMap() {
   const myLatLng = { lat: 41.76999521182157, lng: -87.70415171237143};
   const map = new google.maps.Map(document.getElementById("map"), {
     center: myLatLng,
-	zoom:15,
+	zoom:10,
   });
 
-  new google.maps.Marker({
+ var marker = new google.maps.Marker({
     position: myLatLng,
     map,
     title: "Marquette Park",
+	icon: {  ".png",
+	scaledsize: new google.maps.Size(100,31),
+	}
+ });
+   var museum = new google.maps.Marker({
+    position: { lat: 41.790780214781634, lng: -87.58321264239794 },
+    map,
+    title: "Museum",
   });
+  
+  
 }
+
+let map;
+
