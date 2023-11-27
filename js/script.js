@@ -13,9 +13,11 @@ function initMap() {
     position: myLatLng,
     map,
     title: "Marquette Park",
-	icon:   "media/marquette.png",
-	scaledsize: new google.maps.Size(100,31),
-	}
+	icon: {
+    url:"media/marquette.png",
+	scaledSize: new google.maps.Size(86,80),
+	},
+	animation: google.maps.Animation.DROP
  });
    var museum = new google.maps.Marker({
     position: { lat: 41.790780214781634, lng: -87.58321264239794 },
