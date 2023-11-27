@@ -22,7 +22,12 @@ function initMap() {
    var museum = new google.maps.Marker({
     position: { lat: 41.790780214781634, lng: -87.58321264239794 },
     map,
-    title: "Museum",
+    title: "The Museum of Science and Industry",
+	icon: {
+    url:"media/museum.png",
+	scaledSize: new google.maps.Size(86,80),
+	},
+	animation: google.maps.Animation.DROP
   });
   
   
