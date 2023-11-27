@@ -32,17 +32,12 @@ function initMap() {
   });
   
   const infowindow = new google.maps.InfoWindow({
-    content: "The Museum of Science and Industry",
+    content: "Marquette Park",
    
   });
   
    marker.addListener("click", () => {
     infowindow.open(map,marker);
 	  });
-	  
-	  
-
 }
-
-let map;
 
