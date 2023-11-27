@@ -13,7 +13,7 @@ function initMap() {
     position: myLatLng,
     map,
     title: "Marquette Park",
-	icon: {  ".png",
+	icon: {  "marquette.png",
 	scaledsize: new google.maps.Size(100,31),
 	}
  });
