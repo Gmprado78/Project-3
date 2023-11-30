@@ -183,3 +183,7 @@ background-color: #00b5d6;
  height: 500px;
  border-radius: 25px;
 }
+
+@media (max-width: 480px) {
+}
+	
