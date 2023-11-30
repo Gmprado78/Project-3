@@ -19,12 +19,12 @@ function initMap() {
 	},
 	animation: google.maps.Animation.DROP
  });
-   museum= new google.maps.Marker({
+   const museum = new google.maps.Marker({
     position: { lat: 41.790780214781634, lng: -87.58321264239794 },
     map,
     title: "The Museum of Science and Industry",
 	icon: {
-    url:"media/museum.png",
+    url:"media/Museum.png",
 	scaledSize: new google.maps.Size(86,80),
 	},
 	animation: google.maps.Animation.DROP
@@ -32,17 +32,11 @@ function initMap() {
   });
   
   const infowindow = new google.maps.InfoWindow({
-    content: "The Museum of Science and Industry",
+    content: "Marquette Park",
    
   });
   
    marker.addListener("click", () => {
     infowindow.open(map,marker);
 	  });
-	  
-	  
-
 }
-
-let map;
-
